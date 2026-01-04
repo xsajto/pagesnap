@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  :root {
+    color: #0f172a;
+    background-color: #f6f7fb;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --pc-ink: #0f172a;
+    --pc-muted: #475569;
+    --pc-accent: #0049ad;
+    --pc-accent-strong: #00357f;
+    --pc-surface: rgba(255, 255, 255, 0.78);
+    --pc-surface-strong: rgba(255, 255, 255, 0.9);
+    --pc-ring: rgba(0, 73, 173, 0.35);
+  }
+
+  body {
+    margin: 0;
+    width: 380px;
+    min-height: 520px;
+    padding: 16px;
+    font-family: 'Sora', 'Avenir Next', 'Futura', 'Optima', 'Gill Sans', sans-serif;
+    background:
+      radial-gradient(circle at 15% 10%, rgba(0, 73, 173, 0.18), transparent 52%),
+      radial-gradient(circle at 85% 0%, rgba(14, 116, 144, 0.18), transparent 48%),
+      linear-gradient(155deg, #f5f9ff 0%, #e6f2ff 55%, #f8fafc 100%);
+  }
+
+  #root {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+@layer components {
+  .glow-ring {
+    box-shadow: theme(boxShadow.glow);
+  }
+}
