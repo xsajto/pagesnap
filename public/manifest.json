@@ -7,7 +7,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Page Cloner",
+    "default_title": "PageSnap",
     "default_popup": "index.html"
   },
   "permissions": ["activeTab", "scripting", "downloads", "tabs"],

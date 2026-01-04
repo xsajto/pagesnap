@@ -1,5 +1,6 @@
 DIST_DIR ?= dist
-ZIP_NAME ?= pagesnap.zip
+VERSION := $(shell node -p "require('./package.json').version")
+ZIP_NAME ?= pagesnap-$(VERSION).zip
 
 .PHONY: build zip clean
 
